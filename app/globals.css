@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .porfolioSlider .swiper-button-prev,
+  .porfolioSlider .swiper-button-next {
+    @apply text-white top-[50%] w-[46px] rounded-full z-20;
+  }
+  .porfolioSlider .swiper-button-prev {
+    @apply left-0;
+  }
+  .porfolioSlider .swiper-button-next {
+    @apply right-0;
+  }
+  .porfolioSlider .swiper-button-prev::after,
+  .porfolioSlider .swiper-button-next::after {
+    @apply text-3xl;
+  }
+
+  .porfolioSlider .swiper-pagination-bullet {
+    @apply bg-white;
+  }
+}
